@@ -1,7 +1,6 @@
 {
   "name": "eas-webhook-server",
-  "module": "index.ts",
-  "type": "module",
+  "module": "src/index.ts",
   "private": true,
   "scripts": {
     "dev": "bun run src/index.ts"
