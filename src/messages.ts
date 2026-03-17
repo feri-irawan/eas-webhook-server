@@ -7,6 +7,8 @@ export function createBuildMessage(payload: BuildWebhookPayload): string {
     status === 'finished' ? '✅' : status === 'errored' ? '❌' : '⚠️'
   return `${emoji} **${projectName}** (${platform}) build ${status}
 App Version: ${metadata.appVersion}
+Build Profile: ${metadata.buildProfile}
+Sdk Version: ${metadata.sdkVersion}
 Details: ${buildDetailsPageUrl}`
 }
 
